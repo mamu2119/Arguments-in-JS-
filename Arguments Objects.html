@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Arguments</title>
+    </head>
+    <body>
+        <p>Finding the Largest number with help of Argument object</p>
+        <p id="result"></p>
+        <script>
+            function findmax() {
+                var i;
+                var max = 0;
+                for(i=0; i <arguments.length; i++) {
+                    if (arguments[i] > max) {
+                        max = arguments[i];
+                    }
+                }
+                return max;
+            }
+            document.getElementById("result").innerHTML = findmax(22,25,33);
+        </script>
+    </body>
+</html>
